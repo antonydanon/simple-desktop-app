@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.desktop.simple_app.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="385.0" style="-fx-background-color: #FFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.desktop.simple_app.HelloController">
+   <children>
+      <AnchorPane layoutX="-9.0" prefHeight="75.0" prefWidth="394.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Button fx:id="changeLanguageButton" layoutX="35.0" layoutY="22.0" mnemonicParsing="false" onAction="#changeLanguage" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #F39C63;" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <font>
+                  <Font name="Lucida Bright Regular" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="languageLabel" layoutX="241.0" layoutY="29.0" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+      <Label fx:id="helloWorldLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="124.0" prefHeight="18.0" prefWidth="185.0">
+         <font>
+            <Font name="Lucida Bright Regular" size="16.0" />
+         </font></Label>
+      <Button fx:id="sayHelloButton" onAction="#sayHelloWorld" layoutX="129.0" layoutY="173.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="126.0" style="-fx-background-color: #F39C63;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <font>
+            <Font name="Lucida Bright Regular" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
