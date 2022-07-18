@@ -3,7 +3,7 @@ package com.desktop.simple_app.first_task;
 public class InstanceCounter {
     private static int instanceCount;
 
-    InstanceCounter(){
+    public InstanceCounter(){
         instanceCount++;
     }
 
