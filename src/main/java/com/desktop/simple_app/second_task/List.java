@@ -52,7 +52,7 @@ public class List<T> {
         List<String> someList = new List<>();
 
         for (int i = 0; i < 5; i++) {
-            someList.add(new String(Integer.toString(i)));
+            someList.add(Integer.toString(i));
         }
 
         System.out.println(someList.get(3));
