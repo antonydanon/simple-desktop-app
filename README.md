@@ -1,1 +1,1 @@
-# simple-desktop-app
+There are two first tasks in the repository: in com.desktop.simple_app.first_task contains the InstanceCounter class, which counts its instances; com.desktop.simple_app.second_task contains the List class, which allows you to store, add, delete, receive objects. There is also a desktop application in the repository. The desktop application is written using JavaFX. To run it, you need to run the main() method in the HelloApplication class.
